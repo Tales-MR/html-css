@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Aprendendo a tornar as imagens dinâmicas para multiplataformas</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens\foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem grande">
+    </picture>
+
+    <h1>Testando Áudios</h1>
+    <h2>Forma mais simples</h2>
+    <!-- <audio src="midia/[YT2mp3.info] - GIRLS!.. _ Animated Music Video (320kbps).mp3" controls> -->
+
+    <h2>Forma mais completa</h2>
+    <audio preload="metadata" controls>
+        <source src="midia/[YT2mp3.info] - GIRLS!.. _ Animated Music Video (320kbps).mp3" type="audio/mpeg">
+
+        <p>Infelizmente o seu navegador não possui suporte para esse tipo de áudio, você pode baixar a midia <a href="midia/[YT2mp3.info] - GIRLS!.. _ Animated Music Video (320kbps).mp3">clicando aqui</a></p>
+    </audio>
+</body>
+</html>

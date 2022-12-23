@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Utilizando Listas</h1>
+    <p>Voltar para a <a href="../ex010/index.html">página anterior</a></p>
+    <hr>
+    <div style="background-color:rgba(255, 234, 116, 0.596)">      
+        <h2>Listas Ordenadas</h2>
+        <p>
+            Para utilizarmos listas ordenadas, a tag usada é <br>
+            <code>
+                &lt;ol&gt;
+            </code>
+            <br>
+            Como podemos ver no exemplo abaixo:
+        </p>
+        <ol>
+            <li>Acordar</li>
+            <li>Planejar meu dia</li>
+            <li>Fazer meu café</li>
+        </ol>
+        <p>
+            <strong>
+                Os elementos que compoem uma lista devem ficar entre as tags <br>
+                <code>
+                    &lt;li&gt; ... &lt;/li&gt;
+                </code>
+            </strong>
+        </p>
+        <h3>Modelos de Listas Ordenadas</h3>
+        As listas ordenadas também possuem alguns modelos de ordenação, como no exemplo abaixo: <br>
+        <ol type="A">
+            <li>Utilizando o <code>type="A"</code></li>
+        </ol>
+        <ol type="a">
+            <li>Utilizando o <code>type="a"</code></li>
+        </ol>
+        <ol type="I">
+            <li>Utilizando o <code>type="I"</code></li>
+        </ol>
+        <ol type="i">
+            <li>Utilizando o <code>type="i"</code></li>
+        </ol>
+        <h3>Ordem de início</h3>
+        <p>
+            Para definir o ponto de início de sua lista, basta usar o parâmetro start, como no exemplo a seguir
+        <pre>
+        <code>
+        <strong>&lt;ol type="1" start="5"&gt;</strong>
+        <strong>&lt;li&gt;</strong>Comprar café<strong>&lt;li&gt;</strong>
+        <strong>&lt;li&gt;</strong>Fazer café<strong>&lt;li&gt;</strong>
+        <strong>&lt;/ol&gt;</strong>
+        </code>
+        </pre>
+            O resultado do código acima seria: <br>
+        </p>
+        <ol start="5">
+            <li>Comprar café</li>
+            <li>Fazer café</li>
+        </ol>
+    </div>
+    <hr>
+    <div style="background-color:rgb(212, 164, 92)">
+        <h2>Listas Não Ordenadas</h2>
+        <p>
+            As listas não ordenadas, como o próprio nome indica, não possui ordenação. <br>
+            A tag utilizada para demarcar tal lista é &lt;ul&gt; <br>
+            Exemplo de lista não ordenada:
+        </p>
+        <ul>
+            <li>Existem alguns</li>
+            <li>Modelos de demarcação</li>
+            <li>Para listas não ordenadas</li>
+        </ul>
+        <p>
+            Para utilizar diferentes modelos para listas não ordenadas, utilizamos o parâmetro type, como nas listas ordenadas. <br>
+            Os valores que podem ser utilizados são:
+        </p>
+        <ul type="disque">
+            <li>disque</li>
+        </ul>
+        <ul type="circle">
+            <li>circle</li>
+        </ul>
+        <ul type="square">
+            <li>square</li>
+        </ul>
+    </div>
+    <hr>
+    <div style="background-color:aquamarine">
+        <h2>Listas Mistas</h2>
+        <p>
+            Podemos também utilizar as listas mistas, que nada mais nada menos são que listas dentro de outras listas, como no exemplo abaixo: <br>
+        </p>
+        <ul type="square">
+            <li>Principal</li>
+            <li>Principal</li>
+            <ol type="I">
+                <li>Secundária</li>
+                <li>Secundária</li>
+                <ul type="circle">
+                    <li>Terciária</li>
+                    <ol type="A">
+                        <li>Quaternária</li>
+                    </ol>
+                    <li>Terciária</li>
+                </ul>
+                <li>Secundária</li>
+            </ol>
+            <li>Principal</li>
+        </ul>
+    </div>
+    <hr>
+    <div style="background-color:bisque">
+        <h2>Listas de Definição</h2>
+        <p>
+            São listas utilizadas como uma espécie de dicionário, onde temos um termo e sua descrição logo abaixo, como no exemplo a seguir: <br>
+        </p>
+        <dl>
+            <dt>Amor</dt>
+            <dd>Algo que não pode ser explicado de forma simples.</dd>
+            <dt>Ódio</dt>
+            <dd>O mais puro sentimento</dd>
+        </dl>
+        <p>
+            A tag que cria essa lista é <code>&lt;dl&gt;</code>, e os componetes são: <br> 
+        </p>
+        <code>
+            <dl>
+                <dt>&lt;dt&gt;</dt>
+                <dd>termo a ser definido</dd>
+                <dt>&lt;dd&gt;</dt>
+                <dd>descrição do termo</dd>
+            </dl>
+        </code>
+    </div>
+</body>
+</html>

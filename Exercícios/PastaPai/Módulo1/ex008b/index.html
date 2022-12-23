@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body style="background-color:rgb(201, 248, 248)">
+    <h1>Outras Formatações Úteis</h1>
+    <p>Voltar para a <a href="../ex010/index.html">página anterior</a></p>
+    <hr>
+    <h2>Código-fonte</h2>
+    <p>
+        Podemos colocar um código fonte escrito de uma forma melhor para leitura. <br>
+        input() print() while() (Sem formatação) <br>
+        <code>input() print() While()</code> (Com formatação) <br>
+        Para isso utilizamos o &lt;code&gt;. <br>
+        Podemos também fazer a mesclagem com a tag &lt;pre&gt; para que o HTML considere até mesmo as endentações contidas no texto, exemplo: <br>   
+        <h3>GameMaker Language</h3>
+        <pre>
+            <code>
+andar_esq = keyboard_check(ord(A));
+if (andar_esq)
+{
+    x -= 1; 
+};
+            </code>
+        </pre>
+    </p>
+    <hr>
+    <h2>Citações Simples/Completas</h2>
+    <p>
+        Podemos fazer o uso da tag &lt;q&gt; para demonstrarmos uma citação simples, curta e sem quebra de linha. <br>
+        Exemplo: <br>
+        O pai de um amigo me disse uma vez: <q>O que é isso meu filho</q> <br>
+        E podemos também utilizar a tag &lt;blockquote&gt; para fazermos citações completas, que podem conter até mesmo o endereço da citação. <br>
+        Exemplo: <br>
+        Como dizia o doido do telhado:
+        <blockquote cite="umsitemaluco">
+            Nem todos precisam de um telhado, as vezes só precisam de uma única telha para dormir.
+        </blockquote>
+    </p>
+    <hr>
+    <h2>Usando abreviações</h2>
+    Podemos também usar abreviações no <abbr title="HyperText Markup Language">HTML</abbr>. <br>
+    Para fazer isso, coloquei: <br> 
+    <code>
+        <mark>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</mark>
+    </code>.
+</body>
+</html>

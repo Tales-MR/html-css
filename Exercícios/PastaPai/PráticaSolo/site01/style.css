@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/*Variáveis do site*/
+:root {
+    /*Paleta de cores*/
+    --cor1: #e48100;
+    --cor2: #88460c;
+    --cor3: #ac784a;
+    --cor4: #6a00f5;
+    --cor5: #4A02A8;
+
+    /*Fonte do google fonts*/
+    --fonte-marca: 'Secular One', cursive;
+    --fonte-padrao: 'Alfa Slab One', Arial, Helvetica, sans-serif;
+}
+
+/*Classe com efeito de crescer ao passar o mouse*/
+.ani-cres-font {
+    transition-duration: 0.5s;
+}
+
+.ani-cres-font:hover {
+    font-size: 1.4em;
+}
+
+/*PÁGINA TODA - CONTÉM CONFIGURAÇÕES QUE SERÃO APLICADAS A TODO O SITE*/
+body {
+    background-color: var(--cor4);
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*CABEÇALHO - CONTÉM NOME NO SITE E CONFIGURAÇÕES DO CABEÇALHO*/
+header {
+    background-color: var(--cor1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.658);
+
+    padding: 20px;
+    margin-bottom: 0px;
+
+    position: relative;
+
+    width: 100%;
+}
+
+header h1 {
+    margin: 0px;
+
+    color: var(--cor5);
+    font-family: var(--fonte-marca);
+    text-shadow: 0px 0px 10px rgba(32, 18, 0, 0.514);
+}
+
+/*NAVEGADOR - MENU E SUAS CONFIGURAÇÕES*/
+nav.menu {
+    margin: -20px 10px 10px 60%;
+    padding-top: 0px;
+
+    white-space: nowrap;
+}
+
+nav.menu li {
+    height: max-content;
+    margin-top: 0px;
+
+    list-style-type: none;
+    display: inline-block;
+
+    background-color: var(--cor1);
+    
+    font-family: var(--fonte-padrao);
+    font-size: 1.3em;
+    font-weight: lighter;
+
+    padding: 10px 5px 5px 5px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.699);
+}
+
+nav.menu a {
+    text-decoration: none;
+}
+
+nav.menu input { 
+    border-radius: 6px;
+    background-color: var(--cor4);
+
+    color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    font-weight: lighter;
+
+    height: 15px;
+
+    border-color: var(--cor5);
+}
+
+/*Primeira fileira de mangás*/
+
+main section.fileira {
+    background-color: var(--cor1);
+
+    margin: 90px 0px;
+    padding: 0px 0px 10px 0px;
+
+    width: 70%;
+
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.616);
+
+}
+
+section.fileira h2 {
+    background-color: var(--cor2);
+    
+    color: var(--cor1);
+    padding: 10px;
+
+    font-family: var(--fonte-marca);
+
+    box-shadow: -5px 5px 12px 7px rgb(0 0 0 / 36%);
+}
+
+section.fileira ul {
+    display: inline;
+    margin-left: -20px;
+}
+
+section.fileira > ul > li {
+    display: inline-block;
+
+    background-color: var(--cor3);
+    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--cor2);
+
+    margin: 5px 5px 5px 10px;
+
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.582);
+}
+
+section.fileira > ul > li > img {
+    height: 300px;
+    width: 200px;
+
+    padding: 3px;
+}

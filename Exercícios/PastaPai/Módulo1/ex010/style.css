@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Pacifico&display=swap');
+
+:root {
+    --dark-mode: #002331, #15003d;
+    --normal-mode: #02B1F8, #5A02F8;
+}
+
+body{
+    font-size: 2em;
+    background-image: linear-gradient(to left, var(--normal-mode));
+}
+
+main {
+    margin: auto;
+    width: 800px;
+    text-align: center;
+    background-color: #ebfaff;
+    box-shadow: 4px 4px 8px #273BE3;
+    padding: 10px;
+}
+
+.darkmode button#night:hover {
+}
+
+div#exec {
+    background-color: #f5f0e0;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 4px 4px 8px #273BE3;
+    padding: 10px;
+}
+
+nav#menu {
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: lighter;
+    font-size: 0.5em;
+    width: 400px;
+}
+
+div#exec > nav{
+    display: none;
+}
+
+div#exec:hover > nav {
+    display: block;
+}
+
+header {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #f5f0e0;
+    box-shadow: 4px 4px 8px #273BE3;
+    padding: 10px;
+}
+
+h1, h2 {
+    color: #0b1041;
+    font-family: 'La Belle Aurore', serif;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px #0b1041a4;
+}
+
+p, a {
+    font-family: 'Pacifico', cursiva;
+    color: #131c69;
+    text-decoration: unset;
+}
+
+
+nav {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    background-color: #ebfaff;
+    width: 800px;
+    border-radius: 7px;
+    box-shadow: 4px 4px 8px #273BE3;
+}

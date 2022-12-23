@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: rgb(66, 66, 66);
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+
+        header {
+            background-color: white;
+            padding: 5px;
+        }
+
+        header > nav {
+            background-color: rgb(184, 184, 184);
+            text-align: right;
+        }
+
+        header > nav > a {
+            color: black;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        main {
+            background-color: rgb(255, 0, 0)
+        }
+
+        .divisao-prin {
+            background-color: rgb(184, 184, 184);
+        }
+
+        .divisao-sect {
+            background-color: rgb(134, 134, 134);
+            padding: 10px;
+        }
+
+        .divisao-prin > article > aside {
+            background-color: rgb(129, 129, 129);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Notícias</h1>
+        <section class="divisao-prin">
+            <article class="divisao-sect">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda consectetur laudantium, aliquam et quos animi ex, quam doloremque cum quasi suscipit vero asperiores. Delectus eos ratione quibusdam velit. Asperiores, odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque, reprehenderit dolorum blanditiis minus modi officia culpa temporibus, doloremque cupiditate vitae eos et error voluptates laborum vero ipsa sint assumenda.</p>
+                <aside> 
+                    <p>Escrito por alguém aí.</p>
+                </aside>
+            </article>
+        </section>
+        <h1>Futebol</h1>
+        <section class="divisao-prin">
+            <h2>Copa do Mundo</h2>
+            <article class="divisao-sect">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit magnam asperiores dolore vitae molestias qui? Distinctio sapiente quidem autem iste sunt iure harum ipsum ipsa, libero minus nostrum facilis et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates impedit debitis ex ea nihil. Architecto assumenda ipsa nesciunt ipsam consequuntur itaque iure ut non sed praesentium. Explicabo consectetur maiores possimus?</p>
+            </article>
+            <h2>Brasileirão</h2>
+            <article class="divisao-sect">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto error voluptates facere aliquam quisquam nam dolores odio ea ipsam, aliquid voluptatibus in ad laudantium doloremque molestiae asperiores suscipit atque eligendi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a voluptate quibusdam corporis non nesciunt quas praesentium alias! Error, vel eos ut cum incidunt commodi cupiditate accusamus maiores! A, numquam!</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito inteiramente por mim, e pra mim.</p>
+    </footer>
+</body>
+</html>
