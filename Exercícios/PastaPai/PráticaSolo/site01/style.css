@@ -6,14 +6,15 @@
 /*Variáveis do site*/
 :root {
     /*Paleta de cores*/
+    --cor0: #faad48;
     --cor1: #ff9811;
     --cor7: #340074;
 
     /*Cores de background animado*/
     --cor2: #311941;
-    --cor3: #29163c;
+    --cor3: #2a0559;
     --cor4: #140079;
-    --cor5: #4a005a;
+    --cor5: #2e014d;
     --cor6: rgba(0, 0, 0, 0.534);
 
     /*Fonte do google fonts*/
@@ -23,37 +24,24 @@
 
 /*CORPO DA PÁGINA*/
 body {
-    animation: degrade 10s ease infinite;
-    background-image: linear-gradient(to right, var(--cor5), var(--cor4), var(--cor3), var(--cor2));
-    background-size: 300%;
-}
+    background-image: linear-gradient(to right, var(--cor5), var(--cor4) 80%, var(--cor3));
 
-@keyframes degrade {
-    0% {
-        background-position: 100% 50%;
-    }
+    margin: 0;
 
-    50% {
-        background-position: 0% 50%;
-    }
-
-    100% {
-        background-position: 100% 50%;
-    }
+    overflow-x: hidden;
 }
 
 /*CABEÇALHO DA PÁGINA- Contem as configurações de texto, cor e tamanho*/
 header {
     /*Margem-Tamanho*/
     margin: 0px;
-    width: auto;
-    border-radius: 5px;
+    width: 100vw;
 
 
     /*Cor de fundo*/
     background-color: var(--cor1);
 
-    white-space: nowrap;
+
 }
 
 header h1 {
@@ -68,11 +56,12 @@ header h1 {
 }
 
 header nav {
-    display: inline-block;
+    display: inline;
 
-    padding: 10px;
+    padding: 0px;
 
     margin-left: calc(100vw - 600px);
+    margin-top: -12px;
 }
 
 header a {
@@ -80,11 +69,12 @@ header a {
 
     background-color: var(--cor7);
     box-shadow: 1px 1px 4px var(--cor6);
+    border-radius: 3px;
 
-    padding: 5px;
+    padding: 7px;
     margin: 10px;
     
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-decoration: none;
     font-family: var(--fonte-padrao);
     font-weight: 100;
@@ -101,15 +91,18 @@ header a:hover {
 }
 
 nav input {
-    display: inline-block;
-
     transition-duration: 0.7s;
 
     box-shadow: 0px 0px 1px var(--cor6);
-    border-color: #e48100;
+    border-style: solid;
+    border-color: var(--cor1);
     border-radius: 5px;
 
-    margin: 2px 0px 60px 0px;
+    background-color: var(--cor0);
+
+    margin: 5px 0px 100px 20px;
+
+    transform: scale(1.2);
 }
 
 nav input:hover {
@@ -161,4 +154,35 @@ main > div > button img {
 
 main > div button:hover {
     transform: rotate(0.25turn);
+}
+
+main > section > ul li {
+    display: inline-block;
+
+    background-color: var(--cor0);
+
+    margin: 0px 4px 60px 4px;
+    padding: 3px;
+
+    border-radius: 4px;
+
+    box-shadow: 3px 3px 6px var(--cor6);
+}
+
+main > section > ul > li img {
+    width: 200px;
+    height: 300px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--cor7);
+}
+
+main > section > ul > li h2, a {
+    text-align: center;
+    text-decoration: none;
+
+    margin: auto;
+
+    font: normal 1em var(--fonte-padrao);
 }
