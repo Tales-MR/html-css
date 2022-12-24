@@ -6,11 +6,14 @@
 /*Variáveis do site*/
 :root {
     /*Paleta de cores*/
-    --cor1: #e48100;
-    --cor2: #88460c;
-    --cor3: #ac784a;
-    --cor4: #771eec;
-    --cor5: #4A02A8;
+    --cor1: #ff9811;
+    --cor7: #340074;
+
+    /*Cores de background animado*/
+    --cor2: #311941;
+    --cor3: #29163c;
+    --cor4: #140079;
+    --cor5: #4a005a;
     --cor6: rgba(0, 0, 0, 0.534);
 
     /*Fonte do google fonts*/
@@ -20,7 +23,23 @@
 
 /*CORPO DA PÁGINA*/
 body {
-    background-image: linear-gradient(to right, var(--cor5), var(--cor4));
+    animation: degrade 10s ease infinite;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor4), var(--cor3), var(--cor2));
+    background-size: 300%;
+}
+
+@keyframes degrade {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    50% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 /*CABEÇALHO DA PÁGINA- Contem as configurações de texto, cor e tamanho*/
@@ -28,10 +47,13 @@ header {
     /*Margem-Tamanho*/
     margin: 0px;
     width: auto;
+    border-radius: 5px;
 
 
     /*Cor de fundo*/
     background-color: var(--cor1);
+
+    white-space: nowrap;
 }
 
 header h1 {
@@ -42,6 +64,7 @@ header h1 {
 
     font-family: var(--fonte-marca);
     font-size: 4em;
+    text-decoration: underline;
 }
 
 header nav {
@@ -49,18 +72,18 @@ header nav {
 
     padding: 10px;
 
-    margin-right: 40%;
+    margin-left: calc(100vw - 600px);
 }
 
 header a {
-    display: block;
+    display: inline-block;
 
-    background-color: var(--cor4);
+    background-color: var(--cor7);
     box-shadow: 1px 1px 4px var(--cor6);
 
     padding: 5px;
     margin: 10px;
-
+    
     font-size: 1.5em;
     text-decoration: none;
     font-family: var(--fonte-padrao);
@@ -68,5 +91,74 @@ header a {
 
     color: var(--cor1);
 
+    transition-duration: 0.5s;
+}
 
+header a:hover {
+    transform: translateX(10px)  skewX(0.01turn);
+
+    box-shadow: -3px 3px 4px var(--cor6);
+}
+
+nav input {
+    display: inline-block;
+
+    transition-duration: 0.7s;
+
+    box-shadow: 0px 0px 1px var(--cor6);
+    border-color: #e48100;
+    border-radius: 5px;
+
+    margin: 2px 0px 60px 0px;
+}
+
+nav input:hover {
+    transform: scale(2) translateX(50px) translateY(10px);
+    box-shadow: 4px 4px 6px var(--cor6);
+}
+
+main div {
+    background-color: var(--cor1);
+
+    width: max-content;
+    height: max-content;
+
+    border-top-right-radius: 10px;
+} 
+
+main > div h1 {
+    display: inline-block;
+
+    font: normal 2em var(--fonte-marca);
+    padding: 1px 1px 1px 30px;
+
+    margin: 5px 2px 5px 10px;
+}
+
+main > div button {
+
+    border-color: #4A02A8;
+    border-radius: 5px;
+    background-color: var(--cor4);
+
+    transition-duration: 0.35s;
+
+    padding: 2px;
+
+    height: 28px;
+    width: 28px;
+
+    
+    margin: 0px 20px 0px 5px;
+}
+
+main > div > button img {
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+}
+
+main > div button:hover {
+    transform: rotate(0.25turn);
 }
