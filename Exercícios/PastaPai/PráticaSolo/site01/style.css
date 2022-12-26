@@ -20,6 +20,8 @@
     /*Fonte do google fonts*/
     --fonte-marca: 'Secular One', cursive;
     --fonte-padrao: 'Alfa Slab One', Arial, Helvetica, sans-serif;
+
+    --vis: hidden;
 }
 
 /*CORPO DA PÁGINA*/
@@ -143,6 +145,8 @@ main > div button {
 
     
     margin: 0px 20px 0px 5px;
+
+    transform: rotate(0.25turn);
 }
 
 main > div > button img {
@@ -153,15 +157,73 @@ main > div > button img {
 }
 
 main > div button:hover {
-    transform: rotate(0.25turn);
+    transform: rotate(0turn);
 }
+
+/*Configurando o sub-menu para datas em cada lista*/
+main > div div.sub-menu-data {
+    display: inline-block;
+
+    z-index: 2;
+
+    position: absolute;
+    visibility: hidden;
+
+    opacity: 0;
+
+
+    margin: 0px 10px;
+    padding: 10px;
+
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--cor2);
+    outline-style: solid;
+    outline-color: var(--cor0);
+
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.5s;
+}
+
+main > div button:hover ~ div.sub-menu-data {
+    z-index: 2;
+    visibility: visible;
+
+    opacity: 100;
+
+    transition-delay: 0s;
+}
+
+main > div div.sub-menu-data:hover{
+    z-index: 2;
+    visibility: visible;
+
+    opacity: 100;
+
+    transition-delay: 0s;
+}
+
+main > div div.sub-menu-data:hover ~ button{
+    transform: rotate(0turn);
+}
+
+
+div.sub-menu-data p {
+    font: lighter 1em var(--fonte-padrao);
+}
+
+/*Configurações referentes ao ícone do mangá*/
 
 main > section ul {
     white-space: nowrap;
 }
 
 main > section > ul li {
+    z-index: 1;
+
     display: inline-block;
+    position: relative;
 
     background-color: var(--cor0);
 
@@ -171,6 +233,14 @@ main > section > ul li {
     border-radius: 4px;
 
     box-shadow: 3px 3px 6px var(--cor6);
+
+    transition-duration: 0.5s;
+}
+
+main > section > ul li:hover {
+    z-index: 100;
+
+    transform: scale(1.015);
 }
 
 main > section > ul > li img {
