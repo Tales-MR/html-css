@@ -27,21 +27,21 @@ body {
     background-image: linear-gradient(to right, var(--cor5), var(--cor4) 80%, var(--cor3));
 
     margin: 0;
+    padding: 0;
 
-    overflow-x: hidden;
+    width: 100vw;
+
 }
 
 /*CABEÇALHO DA PÁGINA- Contem as configurações de texto, cor e tamanho*/
 header {
     /*Margem-Tamanho*/
     margin: 0px;
-    width: 100vw;
+    width: 100%;
 
 
     /*Cor de fundo*/
     background-color: var(--cor1);
-
-
 }
 
 header h1 {
@@ -154,6 +154,10 @@ main > div > button img {
 
 main > div button:hover {
     transform: rotate(0.25turn);
+}
+
+main > section ul {
+    white-space: nowrap;
 }
 
 main > section > ul li {
