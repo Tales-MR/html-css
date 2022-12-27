@@ -17,9 +17,16 @@
     --fonte-con: 'Sriracha', Arial, sans-serif;
 }
 
-body {
+
+
+
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    min-height: 100vh;
 }
 
 /*Cabeçalho da página*/
@@ -39,14 +46,8 @@ header h1 {
 
     color: var(--fonte-cor01);
 
-    font: bold 7vw var(--fonte-hed);
-}
-
-header h1 span {
-    margin: 0;
-    padding: 0;
-
-    font-size: 9.5vw;
+    font: bold 10vw var(--fonte-hed);
+    font-variant: small-caps;
 }
 
 /*Autor*/
