@@ -25,7 +25,8 @@
     padding: 0;
 }
 
-body {
+html, body {
+    scroll-behavior: smooth;
     min-height: 100vh;
 }
 
@@ -63,6 +64,8 @@ header p a {
     color: var(--fonte-cor01);
 
     text-decoration: none;
+
+    font-weight: bolder;
 }
 
 header p a:hover {
