@@ -2,14 +2,17 @@
 
 //Variável referente ao MENU do header
 var menu = document.querySelector('nav#menu')
-
 var tela = document.querySelector('body')
 
+tela.addEventListener('load', responsiv)
+
 //Detectando redimensionamento
-tamanho = tela.clientWidth
+function responsiv() {
+    let tamanho = Number(tela.clientWidth)
 
-if (tamanho < 630) {
-    menu.style.display = 'none';
+    if (tamanho < 630) {
+        menu.style.display = 'none';
+    }   
+
+    window.alert('rodei')
 }
-
-$(document) 

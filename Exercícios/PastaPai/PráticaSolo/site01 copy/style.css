@@ -22,7 +22,7 @@
 
 /*Configurações do header*/
 header {
-    display: flex;
+    display: flexbox;
 
     background-color: var(--cor1);
 }
@@ -30,25 +30,25 @@ header {
 img#logo {
     display: inline;
 
-    width: 200px;
+    width: 150px;
 
     padding: 10px;
     margin: 0 0 0 -40px;
 }
 
 h1#nome {
-    display: inline-block;
+    display: inline;
 
-    margin: 45px 0 0 -60px;
+    margin: 30px 0 0 -50px;
 
     font: bold 3em Arial;
     color: var(--cor5);
 }
 
 header > div {
-    display: inline-block;
+    display: inline;
 
-    margin: 0 0 0 80vw;
+    margin: 0 0 0 60vw;
 }
 
 div#busca {
