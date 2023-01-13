@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+div#menu {
+    position: relative;
+}
+
+input {
+    position: absolute;
+}
+
+ul {
+    position: absolute;
+
+    display: none;
+
+    background-color: blueviolet;
+
+    width: min-content;
+    height: min-content;
+
+    transition-duration: 0.2s;
+    transform: scale(0);
+}
+
+ul.fechar {
+    transform: scale(1);
+}
